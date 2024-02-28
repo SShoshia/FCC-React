@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: burlywood;
+}
+
+.App-body > div {
+  background-color: bisque;
+  border-radius: 30px;
+  margin: 90px 180px;
+  overflow: hidden;
+}
+
+.cards-page {
+  padding: 50px 0px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 80px;
+  background-color: azure;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card-image > *{
+  width: 31.25em;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-location > * {
+  margin: 5px;
+}
+
+.card-date {
+  font-weight: bold;
+}
+
+.card-location-name {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.card-description {
+  text-align: start;
+}
+
+.maps-link {
+  color: gray;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fc5666;
+}
+
+.page-header > * {
+  margin: 15px 5px;
+}
+
+.header-logo {
+  width: 1.875em;
+  filter: brightness(0) invert(1);
+}
+
+.header-title {
+  color: white;
+}
+
+.location-marker-icon {
+  width: 0.9375em;
+  margin-right: 5px;
+}

@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, antiquewhite, snow, aquamarine, wheat);
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  color: #444444;
+}
+
+.home-page-container {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-app-title {
+  margin-bottom: 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: darkslateblue;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  width: 200px;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.quiz-start-container {
+  margin-top: 30px;
+}
+
+.input-question-amount {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.input-question-amount:focus {
+  outline-color: #BBBBBB;
+}
+
+.home-page-start-quiz-btn {
+  margin-top: 15px;
+  width: 200px;
+}
+
+.quiz-page-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quiz-container {
+  margin: 20px;
+}
+
+.question-statement {
+  text-align: left;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.answer {
+  border-radius: 20px;
+  border-color: gray;
+  background: none;
+  padding: 10px;
+  min-width: 90px;
+  color: #565656;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.answer:not(.selected-answer):not(.wrong-answer):not(.correct-answer):hover  {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.selected-answer {
+  background-color: #f5f779;
+}
+
+.wrong-answer {
+  background-color: #fa7085;
+}
+
+.correct-answer {
+  background-color: #2ce654;
+}
+
+.quiz-btn-container {
+  margin-bottom: 50px;
+}
+
+.quiz-results {
+  display: inline;
+  font-weight: bold;
+  margin-right: 20px;
+}
